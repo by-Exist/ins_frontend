@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
+  // StricMode는 개발 모드에서만 활성화된다.
+  // 앱 내의 잠재적인 문제를 알아내기 위한 도구.
   <React.StrictMode>
     <App />
   </React.StrictMode>,
