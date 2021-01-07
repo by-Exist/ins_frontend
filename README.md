@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# Instagram front-end repository
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 설명
 
-## Available Scripts
+- 에듀케스트의 React와 Django를 활용하여 Instagram을 클론해본다.
 
-In the project directory, you can run:
+## 여담
 
-### `yarn start`
+- React의 Tutorial을 한 번 수행하고 난 뒤 다시 진행하니 코드가 보인다.
+- 처음 따라할 때에는 리액트가 어떤 건지도 모르고, 그저 객체지향언어이겠거니 했지만 Virtual Dom, State, Component 등의 개념을 처음 만났기 때문에 그저 코드를 옮겨 적기에 지나지 않았다.
+- 비록 어렴풋이 감만 잡은 정도이긴 하지만, 알 수록 보이는게 많다는 말이 딱 들어맞는다.
+- 이번 클론을 끝내고 나면 개인 프로젝트를 해보자.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Note
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- react 학습 단계 설정
+  - react의 Documentation tutorial을 통해 정리한다. (+ JS)
+  - 드림코딩의 react 강좌 중 하나를 수행하여 실무에 활용될 여러 Tip을 정리한다.
 
-### `yarn test`
+## 단계
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- axios를 활용해 비동기적으로 Django의 데이터를 받아오는 방법을 학습한다.
+- react-router-dom을 활용해 url마다 component를 할당하는 방식을 학습한다.
+- antd를 활용하여 기본적인 레이아웃을 디자인한다. (Front-end 전문가가 사용할 만한 프레임워크일까?)

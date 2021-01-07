@@ -1,14 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Root from './pages';
+import "antd/dist/antd.css";
+import { BrowserRouter as Router } from "react-router-dom";
+
 
 ReactDOM.render(
   // StricMode는 개발 모드에서만 활성화된다.
   // 앱 내의 잠재적인 문제를 알아내기 위한 도구.
   <React.StrictMode>
-    <App />
+    {/* 이렇게 감싸야 Router 기능을 활용할 수 있다. */}
+    <Router>
+      <Root />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
