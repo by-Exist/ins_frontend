@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import Root from './pages';
 import "antd/dist/antd.css";
 import { BrowserRouter as Router } from "react-router-dom";
+import { AppProvider } from "./store"
 
 
 ReactDOM.render(
@@ -13,7 +14,9 @@ ReactDOM.render(
   <React.StrictMode>
     {/* 이렇게 감싸야 Router 기능을 활용할 수 있다. */}
     <Router>
-      <Root />
+      <AppProvider>
+        <Root />
+      </AppProvider>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

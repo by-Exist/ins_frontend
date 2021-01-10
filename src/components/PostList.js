@@ -1,27 +1,24 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import { useAxios } from "../api";
+import React from 'react';
+import { useAppContext } from '../store';
 import Post from './Post';
 
-const apiUrl = "http://127.0.0.1:8000/api/posts/";
 
 function PostList() {
 
-	const [postList, setPostList] = useState([]);
+	const { store: { jwtToken } } = useAppContext();
 
-	useEffect(() => {
-		axios.get(apiUrl)
-			.then(res => {
-				const { data } = res;
-				setPostList(data)
-			})
-			.catch(err => {
-				console.log(err)
-			})
-	}, [])
+	const headers = { Authorization: `JWT ${jwtToken}` };
+
+	const [{ data: postList, loading, error }, refetch] = useAxios({
+		url: "http://127.0.0.1:8000/api/posts/",
+		headers,
+	});
 
 	return (
 		<div>
-			{postList.map(post =>
+			{postList && postList.length === 0 && <div>작성된 포스팅이 없습니다.</div>}
+			{postList && postList.map(post =>
 				<Post key={post.id} post={post} />
 			)}
 		</div>
